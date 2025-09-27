@@ -7,7 +7,7 @@ public class Void : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.gameObject.transform.position = new Vector3(0, 0, 0);
+        collision.gameObject.GetComponent<PlayerMovement>().Respawn();
     }
 
 }
